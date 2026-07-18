@@ -231,9 +231,17 @@
       <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <!-- Left Column: Branding Content -->
         <div class="flex flex-col items-start text-left">
-          <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#2563EB] bg-blue-50 border border-blue-100 px-3 py-1 rounded-full mb-5 font-sans">
-            🛡️ Patna's Leading Security Integrator
-          </span>
+          <div class="flex flex-wrap items-center gap-2 mb-5">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-[#2563EB] bg-blue-50 border border-blue-100 px-3 py-1 rounded-full font-sans">
+              🛡️ Patna's Leading Security Integrator
+            </span>
+            <span class="flex items-center gap-1 text-[10px] font-extrabold uppercase tracking-widest text-slate-700 bg-white border border-slate-200 px-3 py-1 rounded-full font-sans shadow-sm">
+              <svg class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/>
+              </svg>
+              Google Rating 4.9 (350+ reviews)
+            </span>
+          </div>
           <h1 class="font-display font-black text-3xl md:text-5xl text-slate-900 leading-tight tracking-tight mb-6">
             Patna's Premium <br class="hidden sm:inline"/>Enterprise Security Solutions
           </h1>
@@ -275,9 +283,8 @@
 
     <!-- 1. Hero Promotional Banner Carousel Section (Flipkart Style Edge-to-Edge) -->
     <section id="home-hero-carousel-section" class="w-full relative mb-8 overflow-hidden">
-      <!-- Full-width on mobile, bounded with margins on desktop -->
-      <div class="max-w-7xl mx-auto px-0 md:px-8 relative group">
-        <div id="carousel-slides-container" class="relative w-full overflow-hidden md:rounded-3xl border-y md:border-2 border-brandDark md:min-h-[380px] lg:min-h-[340px] bg-white">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 relative group">
+        <div id="carousel-slides-container" class="relative w-full overflow-hidden rounded-3xl border border-slate-200 shadow-sm md:min-h-[380px] lg:min-h-[340px] bg-white">
           <!-- Slides will be rendered dynamically by JavaScript -->
         </div>
 
@@ -299,6 +306,38 @@
         </button>
       </div>
     </section>
+
+    <!-- Light Trust Rating Banner (Webflora Style - Light Theme) -->
+    <div class="w-full bg-slate-50/70 py-6 md:py-8 border-y border-slate-150 select-none mb-8">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+        <!-- Left: Star Ratings -->
+        <div class="flex flex-col items-center md:items-start gap-1">
+          <div class="flex gap-0.5 text-yellow-500 text-base">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+          </div>
+          <span class="text-[9px] font-black uppercase tracking-widest text-slate-500 font-sans">Verified Google Reviews</span>
+        </div>
+
+        <!-- Center: Core Statement -->
+        <div class="flex-1 text-center md:text-left md:border-l md:border-slate-200 md:pl-8">
+          <h4 class="font-display font-bold text-sm md:text-base text-slate-900 uppercase tracking-wide">Highest Rated Security Agency in Patna</h4>
+          <p class="text-slate-500 text-[10px] md:text-xs font-semibold mt-1 max-w-xl leading-relaxed font-sans">
+            Join 350+ corporate offices, shops, and smart homes across Bihar that trust RGM Services for premium surveillance and biometric automation.
+          </p>
+        </div>
+
+        <!-- Right: Perfect Rating Badge -->
+        <div class="flex items-center gap-3 bg-white border border-slate-200 rounded-xl px-4 py-2 flex-shrink-0 shadow-sm">
+          <span class="font-display font-black text-xl text-slate-900">4.9</span>
+          <div class="h-6 w-px bg-slate-200"></div>
+          <span class="font-sans text-[8px] font-black uppercase tracking-widest text-slate-500 leading-none">Top<br/>Rated</span>
+        </div>
+      </div>
+    </div>
 
     <!-- ── CLIENT MARQUEE HEADER ── -->
     <div class="w-full bg-brandBlue border-y border-slate-100 py-3 text-center select-none shadow-sm shadow-blue-500/5">
@@ -408,7 +447,6 @@
             <path d="M8 16h16M16 8l8 8-8 8" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             <text x="44" y="24" font-family="'Outfit', sans-serif" font-weight="900" font-size="18" fill="currentColor" letter-spacing="0.05em">LETSTRACK</text>
           </svg>
-        </div>
       </div>
     </div>
       </div>
@@ -593,7 +631,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Professional Site Survey</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Professional Site Survey</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Complimentary physical survey mapping and risk assessments for your property in Patna.</p>
             </div>
           </div>
@@ -604,7 +642,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Certified Installation</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Certified Installation</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Concealed wiring, precise camera positioning, and setup managed by certified system engineers.</p>
             </div>
           </div>
@@ -615,7 +653,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Original Products</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Original Products</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">100% genuine industry-leading hardware nodes directly sourced from certified manufacturers.</p>
             </div>
           </div>
@@ -626,7 +664,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">GST Billing</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">GST Billing</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Save up to 18% with eligible corporate GST invoices issued for all hardware and services.</p>
             </div>
           </div>
@@ -637,7 +675,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Annual Maintenance</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Annual Maintenance</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Long-term protection and system upkeep contracts (AMC) keeping camera feeds online 24/7.</p>
             </div>
           </div>
@@ -648,7 +686,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Fast Response</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Fast Response</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Guaranteed priority response times by local technicians stationed right here in Patna.</p>
             </div>
           </div>
@@ -659,7 +697,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 9a5 5 0 005 5s.1.002.316.019A8.001 8.001 0 0117.657 18.657z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18a6 6 0 100-12 6 6 0 000 12z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Enterprise Support</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Enterprise Support</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Dedicated service agents coordinating support for warehouse and multi-branch clients.</p>
             </div>
           </div>
@@ -670,7 +708,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             </div>
             <div>
-              <h4 class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans">Warranty Included</h4>
+              <div class="text-slate-900 font-bold text-xs uppercase tracking-wider font-sans leading-tight">Warranty Included</div>
               <p class="text-slate-500 text-[10px] font-semibold mt-1.5 leading-relaxed font-sans">Minimum 2-year worry-free hardware warranty with seamless replacement coverage.</p>
             </div>
           </div>
@@ -746,10 +784,133 @@
         </div>
       </section>
 
+      <!-- Google Ratings & Reviews Showcase Section -->
+      <section class="reveal-section border-t border-slate-100 pt-10">
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <div class="flex items-center gap-3">
+            <h3 class="text-slate-900 font-display font-extrabold text-base tracking-tight uppercase">Google Business Reviews</h3>
+            <span class="text-[9px] font-bold uppercase tracking-wider text-green-600 bg-green-50 border border-green-100 px-2 py-0.5 rounded-md">Live Trust Score</span>
+          </div>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-3xl p-6 md:p-10 shadow-sm flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+          <!-- Rating Summary Box (Left) -->
+          <div class="w-full lg:w-[35%] flex flex-col justify-between p-6 bg-slate-50/50 border border-slate-100 rounded-2xl text-center lg:text-left">
+            <div>
+              <div class="flex items-center justify-center lg:justify-start gap-2 mb-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google Logo" class="w-8 h-8" />
+                <span class="font-display font-black text-xl text-slate-800">Reviews</span>
+              </div>
+              <div class="flex items-baseline justify-center lg:justify-start gap-2">
+                <span class="text-5xl font-black text-slate-900 font-display">4.9</span>
+                <span class="text-lg font-bold text-slate-400">/ 5.0</span>
+              </div>
+              <div class="flex justify-center lg:justify-start gap-1 mt-2.5 text-yellow-500">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+              </div>
+              <p class="text-xs text-slate-500 font-semibold mt-3 font-sans">Based on <span class="text-slate-800 font-extrabold">350+ customer reviews</span> from verified installations across Patna.</p>
+            </div>
+            
+            <div class="mt-6 space-y-2 font-sans text-[10px] font-bold text-slate-600">
+              <div class="flex items-center gap-2">
+                <span class="w-3">5★</span>
+                <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="w-[94%] h-full bg-yellow-500 rounded-full"></div>
+                </div>
+                <span class="w-6 text-right">94%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3">4★</span>
+                <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="w-[5%] h-full bg-yellow-500 rounded-full"></div>
+                </div>
+                <span class="w-6 text-right">5%</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="w-3">3★</span>
+                <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                  <div class="w-[1%] h-full bg-yellow-500 rounded-full"></div>
+                </div>
+                <span class="w-6 text-right">1%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Google Reviews Grid (Right) -->
+          <div class="w-full lg:w-[65%] grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Review 1 -->
+            <div class="p-5 border border-slate-100 rounded-2xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200 bg-white">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex gap-0.5 text-yellow-500">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                  </div>
+                  <span class="text-[9px] font-semibold text-slate-400 font-sans">2 weeks ago</span>
+                </div>
+                <p class="text-slate-700 text-[11px] font-semibold leading-relaxed font-sans">"Best CCTV installation service in Patna. The team visited my Danapur shop, completed a site survey, suggested the best setup, and installed CP Plus Guard cameras within 24 hours. Highly professional."</p>
+              </div>
+              <div class="flex items-center gap-3 mt-4 pt-3 border-t border-slate-50">
+                <div class="w-8 h-8 rounded-full bg-blue-100 text-brandBlue flex items-center justify-center font-bold text-xs uppercase">AS</div>
+                <div>
+                  <h5 class="text-slate-900 font-extrabold text-[10px] uppercase tracking-tight flex items-center gap-1">
+                    Anand Sharma
+                    <svg class="w-3.5 h-3.5 text-blue-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  </h5>
+                  <p class="text-slate-450 text-[8px] font-bold uppercase tracking-wider">Patna Business Owner</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="p-5 border border-slate-100 rounded-2xl flex flex-col justify-between hover:border-slate-300 transition-colors duration-200 bg-white">
+              <div>
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex gap-0.5 text-yellow-500">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/></svg>
+                  </div>
+                  <span class="text-[9px] font-semibold text-slate-400 font-sans">1 month ago</span>
+                </div>
+                <p class="text-slate-700 text-[11px] font-semibold leading-relaxed font-sans">"Got biometric locks and access control systems installed for our office in Boring Road Patna. The integration with our local server was smooth. Highly recommend RGM Services."</p>
+              </div>
+              <div class="flex items-center gap-3 mt-4 pt-3 border-t border-slate-50">
+                <div class="w-8 h-8 rounded-full bg-red-100 text-brandRed flex items-center justify-center font-bold text-xs uppercase">RP</div>
+                <div>
+                  <h5 class="text-slate-900 font-extrabold text-[10px] uppercase tracking-tight flex items-center gap-1">
+                    Rahul Prasad
+                    <svg class="w-3.5 h-3.5 text-blue-500 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  </h5>
+                  <p class="text-slate-450 text-[8px] font-bold uppercase tracking-wider">IT Operations Lead</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- 6. Customer Reviews Editorial Section -->
       <section class="border-t-2 border-brandDark pt-10 reveal-section">
-        <div class="flex items-center justify-between mb-4">
-          <h3 class="text-slate-900 font-display font-extrabold text-base tracking-tight uppercase">Enterprise Trust</h3>
+        <div class="flex flex-wrap items-center justify-between gap-4 mb-4">
+          <div class="flex items-center gap-3">
+            <h3 class="text-slate-900 font-display font-extrabold text-base tracking-tight uppercase">Enterprise Trust</h3>
+            <span class="flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-slate-500 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-md">
+              <svg class="w-3 h-3 text-yellow-500 fill-current animate-pulse" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/>
+              </svg>
+              Google 4.9 (350+ reviews)
+            </span>
+          </div>
           <!-- Left/Right navigation buttons for all screens -->
           <div class="flex items-center gap-2">
             <button onclick="scrollReviews('left')" class="w-8 h-8 rounded-full border-2 border-brandDark bg-white flex items-center justify-center text-brandDark hover:bg-slate-50 active:bg-slate-100 transition-colors shadow-sm" aria-label="Scroll left">
@@ -865,6 +1026,79 @@
         </div>
       </section>
 
+    </div>
+
+    <!-- ── TRUSTED CLIENTS MARQUEE HEADER ── -->
+    <div class="w-full bg-[#0F172A] border-y border-slate-800 py-3 text-center select-none shadow-sm shadow-slate-900/5 mt-16">
+      <span class="font-sans text-[9px] font-semibold uppercase tracking-[0.2em] text-slate-300">
+        ★ Trusted Clients & Projects in Bihar ★
+      </span>
+    </div>
+    <!-- ── TRUSTED CLIENTS LOGO MARQUEE (End-to-End Carousel) ── -->
+    <div class="w-full bg-slate-50 border-b border-slate-100 py-6 mb-12 select-none overflow-hidden brutal-marquee-container">
+      <div class="flex gap-20 brutal-marquee-content">
+        <div class="flex items-center gap-20 shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300">
+          <!-- Maurya Hotels -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="4" fill="#0F172A"/>
+            <path d="M5 12l4-6 4 6H5z" fill="white"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">MAURYA HOTELS</text>
+          </svg>
+          <!-- Patna Central Mall -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="9" fill="#2563EB"/>
+            <path d="M5 9h8M9 5v8" stroke="white" stroke-width="1.8"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">PATNA CENTRAL</text>
+          </svg>
+          <!-- Bihar State Power -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="9,0 18,9 13,9 18,18 4,18 9,9 4,9" fill="#FF1E27"/>
+            <text x="26" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">BIHAR POWER</text>
+          </svg>
+          <!-- DPS Patna -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="9,1 17,16 1,16" fill="#16A34A"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">DPS PATNA</text>
+          </svg>
+          <!-- Apex Logistics Bihar -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="16" height="16" rx="3" fill="#D97706"/>
+            <path d="M5 9h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">APEX BIHAR</text>
+          </svg>
+        </div>
+        <!-- Duplicated items for endless loop scrolling -->
+        <div class="flex items-center gap-20 shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300" aria-hidden="true">
+          <!-- Maurya Hotels -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="18" height="18" rx="4" fill="#0F172A"/>
+            <path d="M5 12l4-6 4 6H5z" fill="white"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">MAURYA HOTELS</text>
+          </svg>
+          <!-- Patna Central Mall -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 150 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="9" fill="#2563EB"/>
+            <path d="M5 9h8M9 5v8" stroke="white" stroke-width="1.8"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">PATNA CENTRAL</text>
+          </svg>
+          <!-- Bihar State Power -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="9,0 18,9 13,9 18,18 4,18 9,9 4,9" fill="#FF1E27"/>
+            <text x="26" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">BIHAR POWER</text>
+          </svg>
+          <!-- DPS Patna -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 120 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="9,1 17,16 1,16" fill="#16A34A"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">DPS PATNA</text>
+          </svg>
+          <!-- Apex Logistics Bihar -->
+          <svg class="h-6 w-auto text-slate-800" viewBox="0 0 130 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="16" height="16" rx="3" fill="#D97706"/>
+            <path d="M5 9h8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <text x="24" y="14" font-family="'Outfit', sans-serif" font-weight="900" font-size="11" fill="currentColor" letter-spacing="0.05em">APEX BIHAR</text>
+          </svg>
+        </div>
+      </div>
     </div>
 
     <!-- ================= FAQ SECTION (End-to-End) ================= -->

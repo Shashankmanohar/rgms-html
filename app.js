@@ -749,7 +749,7 @@ function renderHeroCarousel() {
     
     // Render slide element
     const slide = document.createElement("div");
-    slide.className = "carousel-slide hero-carousel-card flex flex-col md:flex-row items-center justify-between gap-6 p-6 pb-14 md:p-8 cursor-pointer w-full";
+    slide.className = "carousel-slide hero-carousel-card flex flex-col md:flex-row items-center justify-between gap-5 p-6 pb-14 md:p-8 md:pb-12 cursor-pointer w-full text-center md:text-left";
     slide.style.display = index === 0 ? "flex" : "none";
     slide.style.opacity = index === 0 ? "1" : "0";
     slide.setAttribute("onclick", ctaPrimaryOnClick);
@@ -763,10 +763,10 @@ function renderHeroCarousel() {
     let statsHTML = "";
     let trustBadgesHTML = "";
     let infoBarHTML = `
-      <div class="flex items-center justify-center md:justify-start gap-1.5 md:gap-3 font-mono text-[9px] md:text-[10px] mb-2 md:mb-4">
-        <span class="text-slate-900 font-bold bg-slate-100 border border-slate-200 px-1.5 py-0.5 rounded text-[8px] md:text-[10px]">₹${product.price.toLocaleString('en-IN')}</span>
-        <span class="flex items-center gap-1 shrink-0 text-slate-650 font-semibold text-[8px] md:text-[10px]">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-3 h-3 text-yellow-500 fill-current" viewBox="0 0 24 24">
+      <div class="flex items-center justify-center md:justify-start gap-1.5 md:gap-3 font-mono mb-2 md:mb-4">
+        <span class="text-slate-900 font-bold bg-slate-100 border border-slate-200 px-1.5 py-0.5 rounded text-[10px] sm:text-xs md:text-sm">₹${product.price.toLocaleString('en-IN')}</span>
+        <span class="flex items-center gap-1 shrink-0 text-slate-650 font-semibold text-[10px] sm:text-xs md:text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-yellow-500 fill-current" viewBox="0 0 24 24">
             <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192L12 .587z"/>
           </svg>
           <span>${product.rating}</span>
@@ -779,15 +779,15 @@ function renderHeroCarousel() {
       <!-- Graphic Grid Overlay -->
       <div class="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.005)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.005)_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
       
-      <!-- Hero Copy Left (100% on mobile, 55% on desktop) -->
-      <div class="w-full md:w-[55%] md:flex-1 z-10 flex flex-col items-center md:items-start text-center md:text-left">
+      <!-- Hero Copy Left (Centered on mobile, left-aligned on desktop) -->
+      <div class="w-full md:w-[55%] md:flex-initial z-10 flex flex-col items-center md:items-start text-center md:text-left overflow-hidden">
         <!-- Badges -->
-        <div class="flex flex-wrap justify-center md:justify-start gap-1 mb-1.5 md:mb-3">
-          <span class="text-[7px] md:text-[9px] font-semibold uppercase tracking-widest text-[#2563EB] bg-blue-50 border border-blue-100 px-1.5 py-0.5 rounded-md">
+        <div class="flex flex-wrap justify-center md:justify-start gap-1.5 mb-2 md:mb-3">
+          <span class="text-[8px] sm:text-[9px] md:text-xs font-semibold uppercase tracking-widest text-[#2563EB] bg-blue-50 border border-blue-100 px-1.5 py-0.5 rounded-md">
             ${product.category}
           </span>
           ${product.tag ? `
-            <span class="text-[7px] md:text-[9px] font-semibold uppercase text-slate-600 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded-md">
+            <span class="text-[8px] sm:text-[9px] md:text-xs font-semibold uppercase text-slate-600 bg-slate-50 border border-slate-200 px-1.5 py-0.5 rounded-md">
               ${product.tag}
             </span>
           ` : ""}
@@ -795,16 +795,16 @@ function renderHeroCarousel() {
         
         ${trustBadgesHTML}
         
-        <h2 class="text-slate-900 font-extrabold tracking-tight font-display max-w-lg leading-[1.2] text-[15px] sm:text-base md:text-3xl lg:text-4xl mb-1.5 md:mb-3 line-clamp-2 text-center md:text-left">${heading}</h2>
+        <h2 class="text-slate-900 font-extrabold tracking-tight font-display max-w-lg leading-[1.2] text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-2 md:mb-3 line-clamp-2 text-center md:text-left">${heading}</h2>
         
         ${infoBarHTML}
         
-        <!-- Actions (Hidden on mobile - Tap banner directly) -->
-        <div class="hidden sm:flex flex-row gap-2 sm:gap-3 w-full max-w-sm">
-          <button onclick="${ctaPrimaryOnClick}" class="flex-1 min-w-0 brutal-btn-primary h-12 rounded-xl text-[10px] sm:text-xs font-semibold px-3 sm:px-6 flex items-center justify-center text-center leading-tight">
+        <!-- Actions -->
+        <div class="flex flex-row gap-2.5 sm:gap-3 w-full max-w-[280px] sm:max-w-sm justify-center md:justify-start mt-1 md:mt-2">
+          <button onclick="${ctaPrimaryOnClick}" class="flex-1 min-w-0 brutal-btn-primary h-10 sm:h-12 rounded-xl text-[10px] sm:text-xs font-semibold px-3 sm:px-6 flex items-center justify-center text-center leading-tight">
             ${ctaPrimaryText}
           </button>
-          <button onclick="${ctaSecondaryOnClick}" class="flex-1 min-w-0 brutal-btn-secondary h-12 rounded-xl text-[10px] sm:text-xs font-semibold px-3 sm:px-6 flex items-center justify-center text-center leading-tight">
+          <button onclick="${ctaSecondaryOnClick}" class="flex-1 min-w-0 brutal-btn-secondary h-10 sm:h-12 rounded-xl text-[10px] sm:text-xs font-semibold px-3 sm:px-6 flex items-center justify-center text-center leading-tight">
             ${ctaSecondaryText}
           </button>
         </div>
@@ -812,13 +812,13 @@ function renderHeroCarousel() {
         ${statsHTML}
       </div>
  
-      <!-- Hero Product Image Container (60% on mobile, 40% on desktop) -->
-      <div class="w-[60%] sm:w-[45%] md:w-[40%] md:flex-1 flex items-center justify-center relative select-none z-10">
-        <div class="w-full aspect-square relative flex items-center justify-center p-3 sm:p-6 bg-gradient-to-br from-slate-50 to-slate-100/50 border border-slate-100 rounded-xl md:rounded-[20px] shadow-sm md:shadow-[0_4px_24px_rgba(0,0,0,0.04)]">
+      <!-- Hero Product Image Container (Centered below copy on mobile) -->
+      <div class="w-[55%] sm:w-[45%] md:w-[40%] md:flex-initial flex items-center justify-center relative select-none z-10 mt-4 md:mt-0">
+        <div class="w-full aspect-square relative flex items-center justify-center p-1 sm:p-4 bg-transparent">
           <img 
             src="${product.image}" 
             alt="${product.name}" 
-            class="max-w-[90%] max-h-[90%] object-contain filter drop-shadow-[2px_6px_12px_rgba(0,0,0,0.04)] transition-transform duration-500 hover:scale-[1.03]"
+            class="max-w-full max-h-full object-contain filter drop-shadow-[2px_6px_12px_rgba(0,0,0,0.04)] transition-transform duration-500 hover:scale-[1.03]"
             loading="lazy"
           />
         </div>

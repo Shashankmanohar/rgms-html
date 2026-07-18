@@ -295,7 +295,6 @@ html.lenis {
   border: none;
   border-radius: 0;
   box-shadow: none;
-  padding: 24px;
   /* Mobile: relative positioning so container auto-sizes to content */
   position: relative;
   width: 100%;
